@@ -61,12 +61,12 @@ spec:
         repoUrl:
           title: Repository Location
           type: string
-          ui:field: RepoUrlPicker
+          ui:field: RepoUrlSelector
+          reuseName: componentId
           ui:options:
             allowedHosts:
               - github.com
               - gitlab.com
-              - bitbucket.org
         visibility:
           title: Repository visibility
           type: string
@@ -76,7 +76,7 @@ spec:
           enumNames:
             - "Public"
             - "Private"
-          default: private
+          default: public
 
   steps:
     - id: template
